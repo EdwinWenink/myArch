@@ -10,3 +10,4 @@ Contains:
 6) overview of useful commands for using media
 7) overview of useful commands for system maintainance / logging
 8) notes for setting up an ssh-server
+(will create proper .dotfiles repo and/or install script later)
