@@ -20,3 +20,7 @@ To boot:
 	startx
 	fi
 14) Make sure that a terminal emulator is installed before autostarting i3. In case of being stuck in i3 without being able to open any terminal, use another ttyN, run as root, and install one.
+# ADJUST SCREEN RESOLUTION
+15) run xrandr with options to see information on possible options, as well as connected screen (e.g. VGA-1)
+16) xrandr --output VGA-1 --mode 1920x1080
+
