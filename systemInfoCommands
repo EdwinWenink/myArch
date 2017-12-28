@@ -1,0 +1,6 @@
+- alsamixer (Volume Control)
+- xbacklight (set screen brightness)
+- nmcli (Commandline interface to NetworkManager
+- htop (monitor running processes)
+- compton (enable to fix screen tearing in window manager, works! Maybe 
+enable on start-up?)
