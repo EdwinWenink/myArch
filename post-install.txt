@@ -6,7 +6,7 @@
 - visudo uncomment wheel ALL=(ALL) ALL
 (opens in vim probably: use :wq to save and exit
 
-- Uncomment multilib in (/etc/pacman.conf) or multilib-testing for 32-bit apps
+-Only on 32bit systems:  Uncomment multilib in (/etc/pacman.conf) or multilib-testing for 32-bit apps
 
 - install yaourt
 - maybe add correct mirrorlist for your country in pacman (/etc/pacman.d/mirrorlist)

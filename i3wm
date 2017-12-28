@@ -22,5 +22,8 @@ To boot:
 14) Make sure that a terminal emulator is installed before autostarting i3. In case of being stuck in i3 without being able to open any terminal, use another ttyN, run as root, and install one.
 # ADJUST SCREEN RESOLUTION
 15) run xrandr with options to see information on possible options, as well as connected screen (e.g. VGA-1)
-16) xrandr --output VGA-1 --mode 1920x1080
+16) add " xrandr --output VGA-1 --mode 1920x1080" to .bash_profile (hmm didn't seem  to work, try adding to i3 config file)
 
+17) install gtk3 (cf. lxappearance), gtk2 etc. (doesn't seem to do shit with lxappearance)
+# Set background
+18) feh --bg-scale /path/to/image.png
