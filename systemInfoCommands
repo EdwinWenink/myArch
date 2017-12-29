@@ -2,7 +2,7 @@
 - xbacklight (set screen brightness)
 - nmcli (Commandline interface to NetworkManager
 - htop (monitor running processes)
-- compton (enable to fix screen tearing in window manager, works! Maybe 
-enable on start-up?)
+- compton (enable to fix screen tearing in window manager, works! Run on start-up)
 - ip addr show
 - nc -vz ipadress port (checks if port on address is open)
+- journalctl -u ssh.service (or another service, for log)
