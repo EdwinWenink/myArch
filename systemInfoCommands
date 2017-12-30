@@ -6,3 +6,7 @@
 - ip addr show
 - nc -vz ipadress port (checks if port on address is open)
 - journalctl -u ssh.service (or another service, for log)
+- journalctl -b (information from current boot)
+- journalctl /usr/bin/sshd
+(https://www.digitalocean.com/community/tutorials/how-to-use-journalctl-to-view-and-manipulate-systemd-logs)
+
