@@ -4,6 +4,7 @@ set sendmail="/usr/bin/msmtp"
 set from=edwinwenink@hotmail.com
 set folder=~/Mail
 set spoolfile=+/
+set sort = reverse-date-received
 
 # Where to save 
 set header_cache=~/.cache/mutt
@@ -12,6 +13,9 @@ set header_cache=~/.cache/mutt
 set mail_check = 30
 set imap_keepalive = 900
 set editor = "vim"
+
+# Load colour scheme
+source ~/.config/neomutt/solarized-dark-16.muttrc
 
 ## Keybindings for integration with notmuch
 macro index <F8> \
