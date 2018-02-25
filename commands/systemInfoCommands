@@ -1,0 +1,16 @@
+# Volume Control
+alsamixer
+
+# Screen
+xbacklight (set screen brightness)
+compton (enable to fix screen tearing in window manager, works! Run on start-up)
+
+# Network
+nmcli (Commandline interface to NetworkManager
+nm-applet (wifi manager)
+ip addr show
+nc -vz ipadress port (checks if port on address is open)
+
+# SystemInfo
+htop (monitor running processes)
+journalctl -u ssh.service (or another service, for log)

@@ -9,6 +9,12 @@ ip addr show
 
 # In VirtualBox the default NAT setting is not enough. Either use port forwarding or expose VirtualBox to internet with bridged network.
 
+#Port forwarding:
+- Determine custom port your server listens to
+- In VBox, add port forward from a port on the host to the chosen port on the guest you listen to
+- Add port forwarding of the physical router to your chosen host port
+: internet --> router --> host port --> virtual guest port
+
 On remote: authorized keys stored in ~/.ssh/authorized_keys
 ssh & sshd configuration files stored in /etc/ssh/
 In configuration files, commented lines are default values
