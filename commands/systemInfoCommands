@@ -14,3 +14,5 @@ nc -vz ipadress port (checks if port on address is open)
 # SystemInfo
 htop (monitor running processes)
 journalctl -u ssh.service (or another service, for log)
+journalctl -b (information since current boot)
+journalctl /usr/bin/sshd 

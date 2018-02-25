@@ -1,0 +1,15 @@
+to mount a shared folder, edit the 
+/etc/fstab 
+
+add for example line(replaces names and 
+path):
+home/edwin/AIShare vboxsf 
+uid=1000,gid=990,rw,dmode=700,fmode=600,noauto,x-systemd.automount 
+
+
+to remount everything without reboot:
+mount -a
+
+for manual mounting:
+sudo mount -t vboxsf sharedFolderName 
+~/path/
