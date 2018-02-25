@@ -157,9 +157,15 @@ bar {
 
 #### Added by Edwin
 
+# Start browser & disown
+bindsym $mod+Shift+Return exec firefox
+ 
 exec --no-startup-id gnome-settings-daemon
-exec compton
-exec --no-startup-id terminator -e "cat /usr/bin/ascii/ju87.txt; exec screenfetch"
+exec --no-startup-id compton
+exec --no-startup-id terminator -e "cat /usr/bin/ascii/ju87.txt; screenfetch; getmail"
+
+## Want to be able to perform commands after command execution 
+#exec --no-startup-id terminator -e "bash -c "cat /usr/bin/ascii/ju87.txt; screenfetch""
 exec terminator
 
 #Lock Screen
@@ -170,3 +176,4 @@ for_window [class="^.*"] border pixel 1
 
 #Assign firefox to workspace 2 (replace '2' by variable name used for workspace, if applicable")
 assign [class="Firefox"] 2
+
