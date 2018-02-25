@@ -1,4 +1,18 @@
-Make sure to set the right permissions: chmod 600  ~/.msmtprc
+
+### GENERAL STRUCTURE
+
+1) getmail --> retrieve email and store them in a mail folder. Default is ~/mail
+
+2) neomutt (or mutt) reads out the specified mail folder.
+
+3) notmuch can be used in combination with mutt to effectively index and search all mail. Configuration of notmuch is straightforward on a first run of notmuch.
+
+4) Adjust the sendmail variable in the mutt configuration file to refer to msmtp for sending emails.
+
+###
+Basic examples of configuration files are included in this folder.
+
+Make sure to set the right permissions for sending emails: chmod 600  ~/.msmtprc
 To pass a password with the gnome-keyring for getmail, use:
 getmail --store-password-in-gnome-keyring
 
