@@ -1,0 +1,9 @@
+Make sure to set the right permissions: chmod 600  ~/.msmtprc
+To pass a password with the gnome-keyring for getmail, use:
+getmail --store-password-in-gnome-keyring
+
+To pass a password for msmtp with gnome keyring, use:
+secret-tool store --label=msmtp host smtp.your.domain service smtp user yourusername
+
+The .getmail and .msmtprc should be located in the home directory
+The neomutt folder belongs in ~/.config/
