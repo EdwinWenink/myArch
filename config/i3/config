@@ -158,6 +158,11 @@ bindsym $mod+r mode "resize"
 
 #### Added by Edwin
 
+# Gaps
+smart_gaps on
+gaps inner 20
+gaps outer -5
+
 # Start polybar
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 
