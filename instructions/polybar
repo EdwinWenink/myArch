@@ -1,0 +1,5 @@
+- git clone https://aur.archlinux.org/polybar-git.git
+- cd polybar
+- -makepkg -Acs PKGBUILD
+- sudo pacman -U #Packagename
+
