@@ -151,22 +151,30 @@ bindsym $mod+r mode "resize"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
-bar {
-        status_command i3status
-}
+# REPLACED WITH POLYBAR, SO COMMENTED OUT FOR NOW
+#bar {
+#        status_command i3status
+#}
 
 #### Added by Edwin
 
-# Start browser & disown
-bindsym $mod+Shift+Return exec firefox
+# Start polybar
+exec_always --no-startup-id ~/.config/polybar/launch.sh
+
+# Float windows by default
+# for_window [class="^.*"] floating enable
  
 exec --no-startup-id gnome-settings-daemon
 exec --no-startup-id compton
-exec --no-startup-id terminator -e "cat /usr/bin/ascii/ju87.txt; screenfetch; getmail"
+exec --no-startup-id terminator -e "cat /usr/bin/ascii/ju87.txt; screenfetch; getmail -q;python2 /usr/bin/gcalcli agenda 0:00 23:59"
+exec --no-startup-id telegram-desktop -startintray &disown
 
 ## Want to be able to perform commands after command execution 
 #exec --no-startup-id terminator -e "bash -c "cat /usr/bin/ascii/ju87.txt; screenfetch""
 exec terminator
+
+# Start browser & disown
+bindsym $mod+Shift+Return exec firefox & disown
 
 #Lock Screen
 bindsym $mod+Shift+o exec "gnome-screensaver-command --lock "
