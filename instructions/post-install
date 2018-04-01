@@ -23,3 +23,4 @@
 - in VirtualBox install folder, run in shell: ./VBoxManage setextradata "Arch Linux" "CustomVideoModel" "1920x1080x32"
 # Edit ratio:
 - in /etc/default/grub , set GRUB_GFXMODE=1600x1200, set GRUB_CMDLINE_LINUX_DEFAULT="quiet video=1920x1080" or ..."quiet vga=799" (deprecated method for 1600x1200)
+- grub-mkconfig -o /boot/grub/grub.cfg

@@ -1,4 +1,6 @@
+# Install i3 (or i3-gaps)
 pacman -S i3 (installs multiple packages: 1) i3-wm 2) i3blocks 3)i3lock 4) i3status
+
 
 Additional packages: 
 5) dmenu (utily for launching apps) 
@@ -26,4 +28,5 @@ To boot:
 
 17) install gtk3 (cf. lxappearance), gtk2 etc. (doesn't seem to do shit with lxappearance)
 # Set background
-18) feh --bg-scale /path/to/image.png
+18) feh --bg-scale /path/to/image.png (pay attention to include the *full* path, not ~)
+19) add "$ ~/.fehbg &" to .xinitrc
