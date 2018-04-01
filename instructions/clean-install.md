@@ -5,13 +5,12 @@
 ## Working internet connection is required
 1) ping google.com
 
-## Partition disk before installation 
-
 ## Show available space
 2) fdisk -l 
 3) cfdisk
 	3a) choose 'dos' label type || choose 'gpt' only for harddisks bigger than 2TB
 	
+## Partition disk before installation 
 In my virtualBox setup, I created three partitions (partition Id:83 type:Linux) 
 
 4) Create primary, bootable disk (10G).  Write after creation.
